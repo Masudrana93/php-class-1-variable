@@ -21,7 +21,7 @@ echo " Mamun";
 ?>
 
 <!-- Variable  -->
-<h5>Kono data/information k store kore rakhar jonno variable use kora hoy. Jate agolo pore use kora jai.</h5>
+<!-- <h5>Kono data/information k store kore rakhar jonno variable use kora hoy. Jate agolo pore use kora jai.</h5> -->
 
 <?php 
 $name = "Masud Rana "; //akhane ($name) akta variable. akhane string data ("Masud") k store kore hoyeche
@@ -36,8 +36,40 @@ echo $name;
 echo $price;
 echo $address;
 echo $isAdmin;
+
+echo "<br>"; //for break
+echo "<br>"; //for break
+
 ?>
 
+
+
+<!-- Difference between '' and "" quotation -->
+
+
+<?php 
+    $total_amount = 10;
+    $first_name = 'Rana';
+
+    echo 'Hello $first_name, Your Total Amount is: $total_amount'; //single quotation er modde variable rakhle ta string/text hishebe output a dekhai.
+
+    echo "<br>"; //for break
+    echo "<br>"; //for break
+
+
+    echo "Hello $first_name, Your Total Amount is: $total_amount";  //double quotation er modde variable rakhle ta output a variable er value show kore. ata shobchaite easy way.
+    
+    echo "<br>";
+    echo "<br>"; 
+
+    echo 'Hello ' . $first_name .', Your Total Amount is:' . $total_amount; // single quotation er modde concatenation/ dot dhara jog koreo variable er value output hishebe dekhano jai.
+    
+    echo "<br>";
+    echo "<br>";
+
+    echo "Hello " . $first_name .", Your Total Amount is:" . $total_amount; // double quotation er modde concatenation/ dot dhara jog koreo variable er value output hishebe dekhano jai.
+?>
+ 
 
 </body>
 </html> 
